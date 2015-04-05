@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/cite/mgr/specs/resources/schemas/cts/TextInventory.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TextInventory tiversion="5.0.rc.1" xmlns="http://chs.harvard.edu/xmlns/cts">
+    <ctsnamespace abbr="greekLit" ns="chs.harvard.edu/ctsns">
+        <description xml:lang="eng">The "First Thousand Years of Greek" project's inventory of Greek texts.</description>
+    </ctsnamespace>
+    <ctsnamespace abbr="latinLit" ns="http://perseus.org/namespaces/cts/latinLit">
+        <description xml:lang="eng">Latin texts hosted by the Perseus Digital Library</description>
+    </ctsnamespace>
+    
+    <ctsnamespace abbr="botcar" ns="folio.furman.edu/ctsns">
+        <description xml:lang="eng">Botanica Caroliniana.</description>
+    </ctsnamespace>
+
+    
+
+    <textgroup urn="urn:cts:greekLit:tlg0085:">
+        <groupname xml:lang="eng">Aeschylus</groupname>
+        <work urn="urn:cts:greekLit:tlg0085.tlg003:" xml:lang="grc">
+            <title xml:lang="eng">Prometheus Bound</title>
+            <title xml:lang="lat">Prometheus Vinctus</title>
+            <edition urn="urn:cts:greekLit:tlg0085.tlg003.fuSyn:">
+                <label xml:lang="eng">Furman Edition, from Perseus</label>
+                <description xml:lang="eng">Based on the Smyth's edition, the Perseus Digital Library's text; speakers marked</description>
+                <online docname="texts/fu-smyth.xml">
+                    
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Poetic Line" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:l[@n='?']">
+                        </citation>
+                    </citationMapping>
+                </online>
+            </edition>
+        </work>
+    </textgroup>
+    <textgroup urn="urn:cts:greekLit:tlg0011:">
+        <groupname xml:lang="eng">Sophocles</groupname>
+        <work urn="urn:cts:greekLit:tlg0011.tlg004:" xml:lang="grc">
+            <title xml:lang="eng">Oedipus Tyrannos</title>
+          
+            <edition urn="urn:cts:greekLit:tlg0011.tlg004.fu02:">
+                <label xml:lang="eng">Edition based on Perseus's text, edited by Jebb. Speakers marked</label>
+                <online docname="texts/ot-grc-speakers.xml">
+                    
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Poetic Line" scope="/tei:TEI/tei:text/tei:body/tei:div" xpath="/tei:l[@n='?']"/>
+                    </citationMapping>
+                </online>
+            </edition>
+           
+          <!--  <edition urn="urn:cts:greekLit:tlg0011.tlg004.fu04:">
+                <label xml:lang="eng">Edition based on Perseus's text, edited by Jebb. Tokenized for syntax</label>
+                <online docname="texts/ot-grc-tokenized.xml">
+                    
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Poetic Line" scope="/tei:TEI/tei:text/tei:body/tei:div" xpath="/tei:l[@n='?']">
+                            <citation label="Token" scope="/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='?']" xpath="/tei:w[@n='?']"/>
+                        </citation>
+                    </citationMapping>
+                </online>
+            </edition>-->
+           
+        </work>
+    </textgroup>
+   
+    
+    <textgroup urn="urn:cts:greekLit:tlg0527:">
+        <groupname xml:lang="eng">Septuagint</groupname>
+        <groupname xml:lang="lat">LXX</groupname>
+        <groupname xml:lang="lat">Septuaginta</groupname>
+        <work  urn="urn:cts:greekLit:tlg0527.tlg001:" xml:lang="grc">
+            <title xml:lang="eng">Genesis</title>
+            <edition urn="urn:cts:greekLit:tlg0527.tlg001.fu01:">
+                <label xml:lang="eng">Genesis. Basic LXX Edition. C. Blackwell, ed.</label>
+                <description xml:lang="eng">LXX Genesis. A new digital edition, based on Rahlfs (1935).</description>
+                <online docname="texts/genesis.xml">
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Chapter" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:div[@type='chapter' and @n='?']">
+                            <citation label="verse" scope="/tei:TEI/tei:text/tei:body/tei:div[@type='chapter' and @n='?']"
+                                xpath="/tei:div[@type='verse' and @n='?']"/>
+                        </citation>
+                    </citationMapping>
+                </online>
+            </edition>
+           
+            <translation urn="urn:cts:greekLit:tlg0527.tlg001.fuKJV:" xml:lang="eng">
+                <label xml:lang="eng">Genesis. King James Version. C. Blackwell, ed.</label>
+                <description xml:lang="eng">Genesis. King James Version. A new digital edition, based on the Project Gutenberg text.</description>
+                <online docname="texts/genesis-KJV.xml">
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Chapter" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:div[@type='chapter' and @n='?']">
+                            <citation label="verse" scope="/tei:TEI/tei:text/tei:body/tei:div[@type='chapter' and @n='?']"
+                                xpath="/tei:div[@type='verse' and @n='?']"/>
+                        </citation>
+                    </citationMapping>
+                </online>
+            </translation>
+          
+        </work>
+       
+       
+    </textgroup>
+    
+    <textgroup urn="urn:cts:botcar:lawson:">
+        <groupname xml:lang="eng">John Lawson</groupname>
+        <work urn="urn:cts:botcar:lawson.voyage:" xml:lang="eng">
+            <title xml:lang="eng">A New Voyage to Carolina</title>
+            <edition urn="urn:cts:botcar:lawson.voyage.1709:">
+                <label xml:lang="eng">1709 ed.</label>
+                <description xml:lang="eng">A New Voyage to Carolina; Containing the Exact Description and Natural History of That Country: Together with the Present State Thereof. And A Journal of a Thousand Miles, Travel’d Thro’ Several Nations of Indians. Giving a Particular Account of Their Customs, Manners, &amp;c. Based on the 2001 digital transcription of this Public Domain work by the University of North Carolina, with funding from the Institute for Museum and Library Services; Apex Data Services, Inc., Melissa Graham Meeks and Natalia Smith.</description>
+                <online docname="texts/Lawson.xml">
+                    
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Section" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:div[@n='?']">
+                            <citation label="Paragraph" scope="/tei:TEI/tei:text/tei:body/tei:div[@n='?']" xpath="/tei:p[@n='?']"/>
+                        </citation>
+                        <citation label="Section" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:div[@n='?']">
+                            <citation label="Paragraph" scope="/tei:TEI/tei:text/tei:body/tei:div[@n='?']" xpath="/tei:note[@n='?']"/>
+                        </citation>
+                    </citationMapping>
+                </online></edition>
+        </work>
+    </textgroup>
+    <textgroup urn="urn:cts:greekLit:tlg0012:">
+        <groupname xml:lang="eng">Homer</groupname>
+        <work urn="urn:cts:greekLit:tlg0012.tlg001:" xml:lang="grc">
+            <title xml:lang="eng">Iliad</title>
+            <edition urn="urn:cts:greekLit:tlg0012.tlg001.fuPers:">
+                <label xml:lang="eng">Furman/Perseus Text, based on Allen</label>
+                <description xml:lang="eng">An edition based on the Perseus XML text.</description>
+                <online docname="texts/Iliad-Allen.xml">
+                    
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Book" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:div[@n='?']">
+                            <citation label="Line" scope="/tei:TEI/tei:text/tei:body/tei:div[@n='?']" xpath="/tei:l[@n='?']"/>
+                        </citation>
+                    </citationMapping>
+                </online>
+            </edition>
+           <!-- <edition urn="urn:cts:greekLit:tlg0012.tlg001.fuPerst:">
+                <label xml:lang="eng">Furman/Perseus Text, based on Allen, tokenized for syntax</label>
+                <description xml:lang="eng">An edition based on the Perseus XML text.</description>
+                <online docname="texts/Iliad-Allen-tokens.xml">
+                    
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Book" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:div[@n='?']">
+                            <citation label="Line" scope="/tei:TEI/tei:text/tei:body/tei:div[@n='?']" xpath="/tei:l[@n='?']">
+                                <citation label="Line" scope="/tei:TEI/tei:text/tei:body/tei:div[@n='?']/tei:l[@n='?']" xpath="/tei:w[@n='?']"/>
+                            </citation>
+                        </citation>
+                    </citationMapping>
+                </online>
+            </edition>-->
+            <translation urn="urn:cts:greekLit:tlg0012.tlg001.persEng:" xml:lang="eng">
+                <label xml:lang="eng">Furman/Perseus Text, based on Butler's Translation</label>
+                <description xml:lang="eng">An edition based on the Perseus XML text.</description>
+                <online docname="texts/Iliad-Butler.xml">
+                    
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Book" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:div1[@n='?']">
+                            <citation label="Line" scope="/tei:TEI/tei:text/tei:body/tei:div1[@n='?']" xpath="/tei:p[@n='?']"/>
+                        </citation>
+                    </citationMapping>
+                </online>
+            </translation>
+           
+            </work>
+         </textgroup> 
+    <textgroup urn="urn:cts:greekLit:tlg0016:">
+        <groupname xml:lang="eng">Herodotus</groupname>
+        <work urn="urn:cts:greekLit:tlg0016.tlg001:" xml:lang="grc">
+            <title xml:lang="eng">Histories</title>
+            <edition urn="urn:cts:greekLit:tlg0016.tlg001.grc:">
+                <label xml:lang="eng">A digital edition based on that of Ph.E. Legrand</label>
+                <description xml:lang="eng">S. LaBerge and C. Blackwell, collated against Ph.E. Legrand, ed. He/rodote. Histoires (Paris: Les Belles Lettres) and C. Hude, ed., Herodoti Historiae (Oxford).</description>
+                <online docname="texts/fu-hdt-grc.xml">
+                    
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Book" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:div[@type='book' and @n='?']">
+                            <citation label="Chapter" scope="/tei:TEI/tei:text/tei:body/tei:div[@type='book' and @n='?']"
+                                xpath="/tei:div[@type='chapter' and @n='?']"/>
+                        </citation>
+                    </citationMapping>
+                </online>
+                
+            </edition>
+           <!-- <edition urn="urn:cts:greekLit:tlg0016.tlg001.grcTok:">
+                <label xml:lang="eng">A digital edition based on that of Ph.E. Legrand, tokenized for syntax</label>
+                <description xml:lang="eng">Tokenized for syntax: S. LaBerge and C. Blackwell, collated against Ph.E. Legrand, ed. He/rodote. Histoires (Paris: Les Belles Lettres) and C. Hude, ed., Herodoti Historiae (Oxford).</description>
+                <online docname="texts/fu-hdt-grc-tok.xml">
+                    
+                    <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+                    <citationMapping>
+                        <citation label="Book" scope="/tei:TEI/tei:text/tei:body" xpath="/tei:div[@type='book' and @n='?']">
+                            <citation label="Chapter" scope="/tei:TEI/tei:text/tei:body/tei:div[@type='book' and @n='?']"
+                                xpath="/tei:div[@type='chapter' and @n='?']">
+                                <citation label="Token" scope="/tei:TEI/tei:text/tei:body/tei:div[@type='book' and @n='?']/tei:div[@type='chapter' and @n='?']/tei:p"
+                                    xpath="/tei:w[@n='?']"/>
+                            </citation>
+                        </citation>
+                    </citationMapping>
+                </online>
+                
+            </edition>-->
+           
+        </work>
+    </textgroup>
+  </TextInventory>
